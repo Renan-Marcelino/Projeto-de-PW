@@ -1,0 +1,130 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.headerPadrao {
+    background-color: #4ADCA2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.barraPesquisa {
+    width: 20rem;
+    padding: 10px;
+
+}
+
+.barraPesquisa::placeholder {
+    text-align: right;
+}
+
+.buttonArrow {
+    padding: 10px;
+}
+
+
+.buttonArrow span {
+    font-weight: bold;
+}
+
+.container {
+    background-image: url('../img/cidade\ de\ sp\ 2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+
+.gridImages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+.gridImages img {
+    border: 1px solid #4ADCA2;
+    width: 250px;
+}
+
+.gridImages span {
+    color: black;
+    background-color: white;
+    border: 1px solid #4ADCA2;
+    display: block;
+    max-width: 230px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.rodape {
+    background-color: #4ADCA2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.rodapeItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span{
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+h2{
+    font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333; 
+    border-radius: 5px; 
+  }
+  
+  /* codigo alterado para abrir a tela de cadastro como popup #RENAN */
+
+  .usuario {
+    cursor: pointer;
+    background-color: transparent; 
+    border: none; 
+  }
+
+  .background {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;   
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1;
+    backdrop-filter: blur(1px); 
+  }
+    /* FIM do codigo alterado para abrir a tela de cadastro como popup #RENAN */
