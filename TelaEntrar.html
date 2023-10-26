@@ -12,9 +12,7 @@
 
         <img class="img" src="logo sem nome.png" alt="">
 
-        <span class="fechar">
             <button class="BTN-fechar" onclick="fecharPopup()"><iconify-icon icon="icon-park:big-x" flip="horizontal,vertical"></iconify-icon></button>
-        </span>  
 
         <span class="google">
             <iconify-icon icon="flat-color-icons:google"></iconify-icon>
@@ -36,8 +34,14 @@
 
         <button class="botao-entrar-sem-borda">Entrar</button>
 
-        <button class="botao-cadastrar-sem-borda">Cadastrar</button>
+        <button class="botao-cadastrar-sem-borda" onclick="abrirTelaCadastro()">Cadastrar</button>
 
+        <div id="modalCadastro" class="modal">
+            <div id="modalContentCadastro" class="modal-content">
+                <button class="BTN-voltar" onclick="fecharTelaCadastro()"></button>
+            </div>
+        </div>
+        
         <p class="ou">ou</p>
         
         <p class="STR-email">Email</p>

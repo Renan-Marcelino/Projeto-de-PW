@@ -8,7 +8,7 @@
     <title>Documento</title>
 </head>
 <body>
-    <div class="quadrado">
+    <div class="fundo" id="fundo">
 
         <img class="img" src="logo sem nome.png" alt="">
         
@@ -18,11 +18,11 @@
             <input type="text" placeholder="nome">
         </span>
 
-        <span class="email">
+        <span class="email2">
             <input type="text" placeholder="Email">
         </span>
 
-        <span class="senha">
+        <span class="senha2">
             <input type="password" placeholder="senha">
         </span>
 
@@ -30,23 +30,27 @@
             <input type="password" placeholder="Confirmar Senha">
         </span>
 
-        <button class="Entrar" type="submit">Cadastrar</button>
+        <button class="Cadastrar" type="submit">Cadastrar</button>
+        
+        <div id="modalCadastro" class="modal">
+            <div id="modalContentCadastro" class="modal-content">
+                <button class="BTN-voltar" onclick="fecharTelaCadastro()">Entrar</button>
+            </div>
+        </div>
 
-        <button class="botao-entrar-sem-borda">Entrar</button>
+        <button class="botao-cadastrar-sem-borda2">Cadastrar</button>
 
-        <button class="botao-cadastrar-sem-borda">Cadastrar</button>
+        <p class="STR-Nome">Nome</p>
 
-        <p class="Nome">Nome</p>
+        <p class="STR-Email2">Email</p>
 
-        <p class="Email">Email</p>
-
-        <p class="Senha">Senha</p>
+        <p class="STR-Senha2">Senha</p>
 
         <p class="ConfirmarSenha">Confirmar Senha</p>
 
-        <hr class="linha1">
+        <hr class="linha1-2">
 
-        <hr class="linha2">
+        <hr class="linha2-2">
 
     </div>
 </body>

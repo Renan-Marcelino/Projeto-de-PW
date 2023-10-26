@@ -30,3 +30,21 @@ function mostrarOcultarSenha() {
         senhaInput.type = "password";
     }
 }
+
+function abrirTelaCadastro() {
+    var modalCadastro = document.getElementById('modalCadastro');
+    var modalContentCadastro = document.getElementById('modalContentCadastro');
+
+    // Use XMLHttpRequest ou Fetch para carregar o conteúdo de TelaCadastro.html
+    fetch('TelaCadastro.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insira o conteúdo carregado no modal do TelaCadastro
+            modalContentCadastro.innerHTML = data;
+            modalCadastro.style.display = 'block';
+        });
+}
+function fecharTelaCadastro() {
+    var modalCadastro = document.getElementById('modalCadastro');
+    modalCadastro.style.display = 'none';
+}
