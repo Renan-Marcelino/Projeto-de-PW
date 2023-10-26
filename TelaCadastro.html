@@ -5,32 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="TelaCadastro.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <title>Documento</title>
+    <title>TelaCadastro</title>
 </head>
 <body>
+    
     <div class="fundo" id="fundo">
-
+        
         <img class="img" src="logo sem nome.png" alt="">
         
         <button class="fechar" onclick="fecharPopup()"><iconify-icon icon="icon-park:big-x" flip="horizontal,vertical"></iconify-icon></button>
-
-        <span class="nome">
-            <input type="text" placeholder="nome">
-        </span>
-
-        <span class="email2">
-            <input type="text" placeholder="Email">
-        </span>
-
-        <span class="senha2">
-            <input type="password" placeholder="senha">
-        </span>
-
-        <span class="Confirmar-Senha">
-            <input type="password" placeholder="Confirmar Senha">
-        </span>
-
-        <button class="Cadastrar" type="submit">Cadastrar</button>
+        
+        <form action="https://api.sheetmonkey.io/form/9Xz3g5h3aQzanD5rQxhit4" method="post">
+            <span class="nome">
+                <input type="text" placeholder="nome" name="name">
+            </span>
+            
+            <span class="email2">
+                <input type="text" placeholder="Email" name="email">
+            </span>
+            
+            <span class="senha2">
+                <input type="password" placeholder="senha" name="senha">
+            </span>
+            
+            <span class="Confirmar-Senha">
+                <input type="password" placeholder="Confirmar Senha" name="confirmar senha">
+            </span>
+            
+            <button class="Cadastrar" type="submit">Cadastrar</button>
+        </form>
         
         <div id="modalCadastro" class="modal">
             <div id="modalContentCadastro" class="modal-content">
