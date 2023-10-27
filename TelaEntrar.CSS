@@ -9,7 +9,7 @@
     border: 2px solid black;
     background-color: rgb(255, 255, 255);
     width: 500px;
-    height: 730px;
+    height: 710px;
   }
   
   .BTN-fechar {
@@ -32,7 +32,7 @@
   
   .google {
     position: absolute;
-    top: 320px;
+    top: 322px;
     right: 50%;
     transform: translate(50%, -50%);
     font-size: 74px;
@@ -41,30 +41,30 @@
   
   .email {
     position: absolute;
-    top: 60%;
+    top: 62%;
     left: 33%;
     transform: translate(-50%, -50%);
-    transform: scale(1.3);
+    transform: scale(1.5);
   
   }
   
   .senha {
     position: absolute;
-    top: 70%;
+    top: 72%;
     left: 33%;
     transform: translate(-50%, -50%);
-    transform: scale(1.3);
+    transform: scale(1.5);
   }
   
   .Entrar {
     position: absolute;
-    top: 90%;
+    top: 88%;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
-    height: 28px;
-    width: 130px;
-    font-size: 16px;
+    height: 35px;
+    width: 180px;
+    font-size: 26px;
     background-color: rgb(74, 220, 162);
   }
   
@@ -101,7 +101,7 @@
   
   .ou {
     position: absolute;
-    top: 53.5%;
+    top: 56%;
     left: 50%;
     transform: translate(-50%, -130%);
     font-size: 22px;
@@ -112,29 +112,29 @@
   
   .STR-email {
     position: absolute;
-    top: 60.5%;
-    left: 29%;
+    top: 58%;
+    left: 29.5%;
     transform: translate(-50%, -50%);
-    font-size: 14px;
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .STR-senha {
     position: absolute;
-    top: 70.5%;
-    left: 29.8%;
+    top: 68%;
+    left: 30%;
     transform: translate(-50%, -50%);
-    font-size: 14px;
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .STR-Esqueci-Minha-Senha {
     position: absolute;
     cursor: pointer;
-    top: 80.4%;
-    left: 64%;
+    top: 76.3%;
+    left: 61.4%;
     transform: translate(-50%, -50%);
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -165,18 +165,20 @@
   
   #mostrarSenha {
     border: none;
-    font-size: 17px;
+    font-size: 24px;
+    background: none;
   }
   
   .mostrarSenha {
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 76.6%;
-    left: 74%;
+    top: 73.5%;
+    left: 70.4%;
     transform: translate(-50%, -50%);
-    width: 8px;
-    height: 16px;
+    width: 12px;
+    height: 20px;
+    background: none;
   }
   
   .icone {
