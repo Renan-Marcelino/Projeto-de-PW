@@ -22,6 +22,12 @@
     cursor: pointer;
     background: none;
   }
+
+  .BTN-voltar {
+    border: none;
+    background: none;
+
+  }
   
   .img {
     padding-top: 1px;
@@ -77,7 +83,7 @@
     color: #000000; 
     position: absolute;
     top: 37%;
-    left: 35%;
+    left: 35.5%;
     transform: translate(-50%, -130%);
     height: 28px;
     width: 30px;
@@ -92,7 +98,7 @@
     color: #000000; 
     position: absolute;
     top: 37.5%;
-    left: 52%;
+    left: 53.2%;
     transform: translate(-50%, -130%);
     height: 28px;
     width: 30px;
@@ -146,19 +152,19 @@
     border: #000000;
     position: absolute;
     top: 35.5%;
-    left: 40.5%;
+    left: 41.5%;
     transform: translate(-50%, -130%);
     z-index: 99;
   }
   
   .linha2 {
-    width: 96px;
+    width: 98px;
     height: 1.3px;
     background-color: rgb(0, 0, 0);
     border: #000000;
     position: absolute;
     top: 35.3%;
-    left: 58.1%;
+    left: 59.1%;
     transform: translate(-50%, -130%);
     z-index: 99;
   }
