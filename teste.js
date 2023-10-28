@@ -48,3 +48,47 @@ function fecharTelaCadastro() {
     var modalCadastro = document.getElementById('modalCadastro');
     modalCadastro.style.display = 'none';
 }
+
+
+var usuarios = [];
+
+function carregarPlanilha() {
+    var fileInput = document.getElementById('fileInput');
+    var file = fileInput.files[0];
+
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+        var data = new Uint8Array(e.target.result);
+        var workbook = XLSX.read(data, { type: 'array' });
+
+        // Suponha que a primeira planilha seja a que contém os dados dos usuários
+        var worksheet = workbook.Sheets[workbook.SheetNames[0]];
+
+        // Converte os dados da planilha em um array de objetos
+        usuarios = XLSX.utils.sheet_to_json(worksheet);
+
+        console.log(usuarios); // Exibe os dados lidos da planilha
+    };
+
+    reader.readAsArrayBuffer(file);
+}
+
+function verificarLogin() {
+    var email = document.getElementById('email').value;
+    var senha = document.getElementById('senha').value;
+    var credenciaisCorretas = false;
+
+    for (var i = 0; i < usuarios.length; i++) {
+        if (usuarios[i].email === email && usuarios[i].senha === senha) {
+            credenciaisCorretas = true;
+            break;
+        }
+    }
+
+    if (credenciaisCorretas) {
+        document.getElementById('resultado').textContent = "Login bem-sucedido. Acesso permitido.";
+    } else {
+        document.getElementById('resultado').textContent = "Credenciais incorretas. Acesso negado.";
+    }
+}
