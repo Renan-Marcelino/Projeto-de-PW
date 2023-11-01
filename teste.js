@@ -1,3 +1,5 @@
+// funçao para abrir tela LOGIN #RENAN
+
 function abrirPopup() {
     var background = document.getElementById("background");
     var popup = document.getElementById("popup");
@@ -14,11 +16,19 @@ function abrirPopup() {
     xhr.send();
 }
 
+
+// FIM da funçao para abrir tela LOGIN #RENAN
+
+// funçao para fechar tela Cadastro #RENAN
+
 function fecharPopup() {
     var background = document.getElementById("background");
     background.style.display = "none"; 
 }
 
+// FIM da funçao para fechar tela Cadastro #RENAN
+
+// funçao para mostrar senha #RENAN
 
 function mostrarOcultarSenha() {
     var senhaInput = document.getElementById("senha");
@@ -30,6 +40,10 @@ function mostrarOcultarSenha() {
         senhaInput.type = "password";
     }
 }
+
+// FIM da funçao para mostrar senha #RENAN
+
+// funçao para abrir tela Cadastro #RENAN
 
 function abrirTelaCadastro() {
     var modalCadastro = document.getElementById('modalCadastro');
@@ -44,10 +58,22 @@ function abrirTelaCadastro() {
             modalCadastro.style.display = 'block';
         });
 }
+
+// FIM da funçao para abrir tela Cadastro #RENAN
+
+// funçao para voltar para tela LOGIN #RENAN
+
 function fecharTelaCadastro() {
     var modalCadastro = document.getElementById('modalCadastro');
     modalCadastro.style.display = 'none';
 }
+
+// FIM da funçao para voltar para tela LOGIN #RENAN
+
+
+
+// #RENAN *** #RENAN *** #RENAN
+// ↓↓↓↓↓↓↓ REVISAR  *****  REVISAR ***** REVISAR ↓↓↓↓↓↓↓
 
 
 var usuarios = [];
@@ -92,3 +118,8 @@ function verificarLogin() {
         document.getElementById('resultado').textContent = "Credenciais incorretas. Acesso negado.";
     }
 }
+
+// ↑↑↑↑↑↑↑ REVISAR  *****  REVISAR ***** REVISAR ↑↑↑↑↑↑↑
+// #RENAN *** #RENAN *** #RENAN
+
+

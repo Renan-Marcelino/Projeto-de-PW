@@ -1,0 +1,161 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.headerPadrao {
+    background-color: #4ADCA2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container {
+    background-image: url('../img/cidade\ de\ sp\ 2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 87vh;
+    overflow-y: hidden;
+}
+
+
+.gridImages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+.gridImages img {
+    border: 1px solid #4ADCA2;
+    width: 250px;
+}
+
+.gridImages span {
+    color: black;
+    background-color: white;
+    border: 1px solid #4ADCA2;
+    display: block;
+    max-width: 230px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.rodape {
+    background-color: #4ADCA2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.rodapeItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+}
+
+span{
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+h2{
+    font-family: 'Inter', sans-serif;
+    
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333; 
+    border-radius: 5px; 
+  }
+  
+  h3{
+    font-size: bold;  
+    font-family: segoe ui;
+    position: absolute;
+    left: 14%;   
+    top: 11%;
+    margin: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 1400px;
+    
+}
+
+
+  
+  
+  
+  .sobreQuadro {
+  background-color: #FFFFFF;
+  border: 2px solid #993399;
+  text-align: center;
+  padding: 388px;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  opacity: 0.6;
+  
+  
+
+ 
+}
+ 
+#logoSobreTxt img{
+    position: absolute;
+    margin-right: 20px;
+    vertical-align: middle;
+    width: 84px;
+    left: 35%;
+    top: 24%;
+    height: 500px;
+    width: 500px;
+       
+}
+ 
+
+ 
+#top img{
+    position: absolute;
+    left: 47%;
+    margin-top:  -24px;
+    vertical-align: sub;
+    width: 60px;
+     
+}
+
+.iconeCasa{
+   margin-right: 1px;
+    vertical-align: sub;
+    width: 44px;
+}
+
+.iconeTamanhoUser{
+    margin-right: 1px;
+    vertical-align: sub;
+    width: 62px;
+}
+
+.iconeTamanhoLogo{
+    position: absolute;
+    margin-right: 1px;
+    vertical-align: sub;
+    width: 188px;
+    
+    
+}
