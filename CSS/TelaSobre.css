@@ -1,11 +1,39 @@
 /* CODIGO ALTERADO PARA AJUSTAR A LOGO PRINCIPAL #RENAN */
+body {
+    overflow: hidden;
+}
+
 .iconeTamanhoLogo {
     position: absolute;
     top: -2.5%;
 }
 
 .iconeCasa {
+    position: relative;
+    margin-top: 31%;
+    right: 14%;
+}
+
+.rodape {
+    position: relative;
+    border: solid 3px ;  
+    border-color: #4ADCA2; 
+    top: -5px;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+.icone5 {
+    margin-right: 10px;
+}
+
+.end {
+    margin-right: 10px;
+}
+
+.imgf {
     position: absolute;
-    top: 1%;
-    left: 94.5%;
+    scale: 2.5;
 }
