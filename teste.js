@@ -1,5 +1,7 @@
 // funçao para abrir tela LOGIN #RENAN
 
+var confirmacao = false;
+
 function abrirPopup() {
     var background = document.getElementById("background");
     var popup = document.getElementById("popup");
@@ -14,6 +16,42 @@ function abrirPopup() {
         }
     };
     xhr.send();
+}
+
+function funcaoOriginal() {
+  abrirPopup(); // Chama a função abrirPopup() após a confirmação
+}
+
+function funcaoAposConfirmacao() {
+  abrirlogin();    
+}
+
+function executarFuncao() {
+  if (confirmacao) {
+    funcaoAposConfirmacao();
+  } else {
+    funcaoOriginal();
+  }
+}
+
+function abrirlogin() {
+  var background = document.getElementById("background");
+  var popup = document.getElementById("popup");
+  var conteudoPopup = document.getElementById("conteudoPopup");
+
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "TelaPerfil.html", true);
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      conteudoPopup.innerHTML = xhr.responseText;
+      background.style.display = "flex";
+    }
+  };
+  xhr.send();
+}
+
+function confirmar() {
+  confirmacao = true;
 }
 
 
