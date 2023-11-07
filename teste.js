@@ -19,20 +19,13 @@ function abrirPopup() {
 }
 
 function funcaoOriginal() {
-  abrirPopup(); // Chama a função abrirPopup() após a confirmação
+  abrirPopup(); 
 }
 
 function funcaoAposConfirmacao() {
-  abrirlogin();    
+  abrirlogin();  
 }
 
-function executarFuncao() {
-  if (confirmacao) {
-    funcaoAposConfirmacao();
-  } else {
-    funcaoOriginal();
-  }
-}
 
 function abrirlogin() {
   var background = document.getElementById("background");
@@ -50,9 +43,18 @@ function abrirlogin() {
   xhr.send();
 }
 
+
+function executarFuncao() {
+  if (confirmacao) {
+    funcaoAposConfirmacao();
+  } else {
+    funcaoOriginal();
+  }
+}
+
 function confirmar() {
   confirmacao = true;
-  fecharPopup()
+  fecharPopup();
 }
 
 

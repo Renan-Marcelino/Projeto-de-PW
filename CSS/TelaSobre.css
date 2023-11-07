@@ -1,4 +1,5 @@
 /* CODIGO ALTERADO PARA AJUSTAR A LOGO PRINCIPAL #RENAN */
+
 body {
     padding: 0;
     margin: 0;
@@ -17,10 +18,10 @@ body {
 .iconeCasa {
     position: relative;
     margin-top: 31%;
-    right: 14%;
-    margin-right: 1px;
+    right: 32%;
     vertical-align: sub;
     width: 44px;
+    top: -5px;
 }
 
 .rodape {
@@ -59,31 +60,8 @@ h2 {
     background-image: url('../img/cidade\ de\ sp\ 2.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 87vh;
+    height: 86.6vh;
     overflow-y: hidden;
-}
-
-.gridImages {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 100px;
-    margin-top: 60px;
-}
-
-.gridImages img {
-    border: 1px solid #4ADCA2;
-    width: 250px;
-}
-
-.gridImages span {
-    color: black;
-    background-color: white;
-    border: 1px solid #4ADCA2;
-    display: block;
-    max-width: 230px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    padding: 10px;
 }
 
 .rodape {
@@ -149,9 +127,4 @@ h3{
     width: 60px;
 }
 
-.iconeTamanhoUser{
-    margin-right: 1px;
-    vertical-align: sub;
-    width: 62px;
-}
 
