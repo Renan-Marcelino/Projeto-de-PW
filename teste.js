@@ -52,6 +52,7 @@ function abrirlogin() {
 
 function confirmar() {
   confirmacao = true;
+  fecharPopup()
 }
 
 
