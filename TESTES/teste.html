@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="teste2.js"></script>
+  <script>
+    var confirmacao = false;
+
+    function abrirPopup() {
+        var background = document.getElementById("background");
+        var popup = document.getElementById("popup");
+        var conteudoPopup = document.getElementById("conteudoPopup");
+    
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "TelaEntrar.html", true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                conteudoPopup.innerHTML = xhr.responseText;
+                background.style.display = "flex";
+            }
+        };
+        xhr.send();
+    }
+
+    function funcaoOriginal() {
+      abrirPopup(); // Chama a função abrirPopup() após a confirmação
+    }
+
+    function funcaoAposConfirmacao() {
+      abrirlogin();    
+    }
+
+    function executarFuncao() {
+      if (confirmacao) {
+        funcaoAposConfirmacao();
+      } else {
+        funcaoOriginal();
+      }
+    }
+
+    function abrirlogin() {
+      var background = document.getElementById("background");
+      var popup = document.getElementById("popup");
+      var conteudoPopup = document.getElementById("conteudoPopup");
+
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "TelaPerfil.html", true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+          conteudoPopup.innerHTML = xhr.responseText;
+          background.style.display = "flex";
+        }
+      };
+      xhr.send();
+    }
+
+    function confirmar() {
+      // Implemente aqui a lógica para verificar a confirmação do formulário
+      confirmacao = true;
+      alert("Formulário confirmado!");
+    }
+  </script>
 </head>
 <body>
-  <button onclick="openPopup()"
-  class="popup-button">Abrir Pop-up na Página 1</button>
-  <div id="popup-content"></div>
+  <button id="meuBotao" onclick="executarFuncao()">Clique em mim</button>
+  <button class="Cadastrar" type="submit">Cadastrar</button>
+
+  <div id="background" style="display: none;"></div>
+  <div id="popup">
+    <div id="conteudoPopup">Conteúdo do popup</div>
+  </div>
 </body>
 </html>
