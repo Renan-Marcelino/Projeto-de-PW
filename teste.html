@@ -1,71 +1,143 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <script>
-    var confirmacao = false;
+<html lang="PT-BR">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="LELE.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto&display=swap" rel="stylesheet">
+<script>
+  // Função para alterar o slide quando uma miniatura é clicada
+  function changeSlide(slideNumber) {
+    const slides = document.querySelectorAll('.slider li input');
+    slides[slideNumber].checked = true;
+  }
+</script>
 
-    function abrirPopup() {
-        var background = document.getElementById("background");
-        var popup = document.getElementById("popup");
-        var conteudoPopup = document.getElementById("conteudoPopup");
-    
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", "TelaEntrar.html", true);
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4 && xhr.status == 200) {
-                conteudoPopup.innerHTML = xhr.responseText;
-                background.style.display = "flex";
-            }
-        };
-        xhr.send();
-    }
-
-    function funcaoOriginal() {
-      abrirPopup(); // Chama a função abrirPopup() após a confirmação
-    }
-
-    function funcaoAposConfirmacao() {
-      abrirlogin();    
-    }
-
-    function executarFuncao() {
-      if (confirmacao) {
-        funcaoAposConfirmacao();
-      } else {
-        funcaoOriginal();
-      }
-    }
-
-    function abrirlogin() {
-      var background = document.getElementById("background");
-      var popup = document.getElementById("popup");
-      var conteudoPopup = document.getElementById("conteudoPopup");
-
-      var xhr = new XMLHttpRequest();
-      xhr.open("GET", "TelaPerfil.html", true);
-      xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-          conteudoPopup.innerHTML = xhr.responseText;
-          background.style.display = "flex";
-        }
-      };
-      xhr.send();
-    }
-
-    function confirmar() {
-      // Implemente aqui a lógica para verificar a confirmação do formulário
-      confirmacao = true;
-      alert("Formulário confirmado!");
-    }
-  </script>
 </head>
-<body>
-  <button id="meuBotao" onclick="executarFuncao()">Clique em mim</button>
-  <button class="Cadastrar" type="submit">Cadastrar</button>
 
-  <div id="background" style="display: none;"></div>
-  <div id="popup">
-    <div id="conteudoPopup">Conteúdo do popup</div>
-  </div>
+<body>
+  <header class="headerPadrao">
+    <img class="iconeTamanhoLogo" src="img/MicrosoftTeams-image-removebg-preview (2).png" alt="aaaa">
+    <div id="top">
+      <img src="img/image-removebg-preview (1).png" alt="" />
+    </div>
+    <div class="headerPadrao">
+      <img class="iconeCasa" src="img/image-removebg-preview.png" alt="">
+      <img class="iconeTamanhoUser" src="img/ei_user.png" alt="">
+    </div>
+  </header>
+  <section class="container">
+    <ul class="slider">
+      <li>
+        <input type="radio" id="slide1" name="slide" checked>
+        <label for="slide1"></label>
+        <img src="img/interiores/cozinha2.png" />
+      </li>
+      <li>
+        <input type="radio" id="slide2" name="slide">
+        <label for="slide2"></label>
+        <img src="img/interiores/quarto2.png" />
+      </li>
+      <li>
+        <input type="radio" id="slide3" name="slide" checked>
+        <label for="slide3"></label>
+        <img src="img/interiores/salas2.png" />
+      </li>
+    </ul>
+    <ul class="miniatura">
+      <li onclick="changeSlide(0)">
+        <img src="img/interiores/cozinha2.png" />
+      </li>
+      <li onclick="changeSlide(1)">
+        <img src="img/interiores/quarto2.png" />
+      </li>
+      <li onclick="changeSlide(2)">
+        <img src="img/interiores/salas2.png" />
+      </li>
+      <li onclick="changeSlide(0)">
+        <img src="img/interiores/cozinha2.png" />
+      </li>
+      <li onclick="changeSlide(1)">
+        <img src="img/interiores/quarto2.png" />
+      </li>
+      <li onclick="changeSlide(2)">
+        <img src="img/interiores/salas2.png" />
+      </li>
+      <li onclick="changeSlide(2)">
+        <img src="img/interiores/salas2.png" />
+      </li>
+    </ul>
+
+
+
+
+
+
+
+    <div id="Detalhes">
+      <img src="img/rascu-removebg-preview.png" alt="" />
+    </div>
+
+    <div class="sobreQuadro">
+
+    </div>
+    <h3> askjdhaskjdhkajshdaskjhdaskjdhakjdhakjhdakjdhakjdhakjdhak<br>
+      sdashkjdajdsadasda
+    </h3>
+
+    <div id="Resumo">
+      <img src="img/resumo-removebg-preview.png" alt="" />
+    </div>
+
+    <div class="sobreQuadro2">
+      <div id="iconeCama">
+        <img src="img/cama.png" alt="" />
+      </div>
+      <div id="iconeChuveiro">
+        <img src="img/chuveiro.png" alt="" />
+      </div>
+      <div id="iconeCozinha">
+        <img src="img/cozinha.png" alt="" />
+      </div>
+      <div id="iconeSala">
+        <img src="img/sala.png" alt="" />
+      </div>
+      <div id="iconeCarro">
+        <img src="img/carro.png" alt="" />
+      </div>
+
+    </div>
+   
+    <footer class="rodape">
+
+      <h2>Contatos:</h2>
+
+      <div class="rodapeItems">
+        <a href="https://web.whatsapp.com/" target="_blank"><img src="img/logos_whatsapp-icon.png" alt=""
+            class="icone1"></a>
+        <span>(11) 4002-8922</span>
+      </div>
+      <div class="rodapeItems">
+        <a href="https://www.instagram.com/" target="_blank"><img src="img/skill-icons_instagram.png" alt=""
+            class="icone2"></a>
+        <span>@LarHouseImobiliaria</span>
+      </div>
+      <div class="rodapeItems">
+        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="img/logos_facebook.png" alt=""
+            class="icone3"></a>
+        <span>LarHouseImobiliaria</span>
+      </div>
+      <div class="rodapeItems">
+        <a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser&ec=asw-gmail-globalnav-signin&theme=glif"
+          target="_blank"><img src="img/logos_google-gmail.png" alt="" class="icone4"></a>
+        <span>LarHouseImobiliaria@gmail.com</span>
+      </div>
+      <div class="rodapeItems">
+        <a href="https://www.google.com.br/maps/place/Paulista+Im%C3%B3veis/@-23.6511975,-46.7835348,12z/data=!4m10!1m2!2m1!1simobiliaria+paulista!3m6!1s0x94ce5a35a143af5b:0xfdd21edfb9d84a2f!8m2!3d-23.6023467!4d-46.6348048!15sChRpbW9iaWxpYXJpYSBwYXVsaXN0YVoWIhRpbW9iaWxpYXJpYSBwYXVsaXN0YZIBEnJlYWxfZXN0YXRlX2FnZW5jeeABAA!16s%2Fg%2F1ptw57k9h?entry=ttu"
+          target="_blank"><img src="img/logos_google-maps.png" alt="" class="icone5"></a>
+        <span class="end">Av. José da Casa Verde, 182 - Centro, SP</span>
+      </div>
+    </footer>
 </body>
+
 </html>
