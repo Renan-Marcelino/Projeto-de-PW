@@ -233,7 +233,7 @@ h4 {
     top: 62.5%;
 }
 
-p {
+.p {
     margin: 3%;
     font-size: 21px;
     font-weight: bold;
@@ -299,7 +299,17 @@ p {
     width: 82px;
 }
 
-
+.num {
+    display: flex;
+    font-family: 'ingrid darling';
+    position: fixed;
+    width: 1px;
+    font-size: 55px;
+    font-weight: bold;
+    top: -45px;
+    right: 67%;
+    color: hsl(300, 62%, 46%);
+}
 
 .sobreQuadro2 {
     background-color: #393535;
@@ -313,13 +323,26 @@ p {
     top: 10%;
 }
 
+.maps {
+    position: absolute;
+    display: flex;
+    font-size: 20px;
+    width: 190px;
+}
+
+.mapa {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+
 .linha {
     background-color: #7FFFD4;
     text-align: center;
     padding: 2px;
     position: absolute;
-    left: 64%;
-    bottom: 90px;
+    left: 61%;
+    bottom: 8.5%;
     height: 27%;
 }
 
