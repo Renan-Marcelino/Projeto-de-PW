@@ -1,0 +1,130 @@
+/* CODIGO ALTERADO PARA AJUSTAR A LOGO PRINCIPAL #RENAN */
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.iconeTamanhoLogo {
+    position: absolute;
+    top: -2.5%;
+    margin-right: 1px;
+    vertical-align: sub;
+    width: 9.5%;
+}
+
+.iconeCasa {
+    position: relative;
+    margin-top: 31%;
+    right: 32%;
+    vertical-align: sub;
+    width: 44px;
+    top: -5px;
+}
+
+.rodape {
+    position: relative;
+    border: solid 3px ;  
+    border-color: #4ADCA2; 
+    top: -5px;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;  
+    margin-left: 10px;
+}
+
+.icone5 {
+    margin-right: 10px;
+}
+
+.end {
+    margin-right: 10px;
+}
+
+.imgf {
+    position: absolute;
+    scale: 2.5;
+}
+
+.headerPadrao {
+    background-color: #4ADCA2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    background-image: url('../img/cidade\ de\ sp\ 2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 86.6vh;
+    overflow-y: hidden;
+}
+
+.rodape {
+    background-color: #4ADCA2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.rodapeItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+span{
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+  
+h3{
+    font-size: bold;  
+    font-family: segoe ui;
+    position: absolute;
+    left: 14%;   
+    top: 11%;
+    margin: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 1400px;
+}
+
+.sobreQuadro {
+    background-color: #FFFFFF;
+    border: 2px solid #993399;
+    text-align: center;
+    padding: 388px;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    opacity: 0.6;
+}
+ 
+#logoSobreTxt img{
+    position: absolute;
+    margin-right: 20px;
+    vertical-align: middle;
+    width: 84px;
+    left: 35%;
+    top: 24%;
+    height: 500px;
+    width: 500px;     
+}
+ 
+#top img{
+    position: absolute;
+    left: 47%;
+    margin-top:  -24px;
+    vertical-align: sub;
+    width: 60px;
+}
+
+

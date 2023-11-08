@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/TelaAnuncio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href=" https://fonts.cdnfonts.com/css/ingrid-darling " rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto&display=swap" rel="stylesheet">
+    <title>Lar House Imobiliária</title>
+</head>
+
+<body>
+    <header class="headerPadrao">
+
+        <!-- codigo alterado para Voltar para a tela inicio #RENAN -->
+
+        <a href="TelaImoveis.html"><img class="iconeTamanhologo" src="img/MicrosoftTeams-image-removebg-preview (2).png"
+                alt="aaaa"></a>
+
+        <!-- FIM do codigo alterado para Voltar para a tela inicio #RENAN -->
+
+        <div class="botoes">
+            <button class="buttonArrow" id=" wrapper">
+                <span>Tipo</span>
+                <img src="img/icones/arrow.png" alt="icone" class="icone">
+            </button>
+            <button class="buttonArrow" id=" wrapper">
+                <span>Area²</span>
+                <img src="img/icones/arrow.png" alt="icone" class="icone">
+            </button>
+            <button class="buttonArrow" id=" wrapper">
+                <span>City</span>
+                <img src="img/icones/arrow.png" alt="icone" class="icone">
+            </button>
+        </div>
+
+        <div class="pesquisa">
+            <input class="barraPesquisa" type="text" placeholder="Buscar meu lar">
+            <img class="iconeTamanhopesquisa" src="img/icones/pesquisa.png" alt="">
+        </div>
+
+        <!-- codigo alterado para abrir a tela de SOBRE como NOVA PG #RENAN -->
+
+        <div class="headerPadrao">
+            <a href="TelaSobre.html"><img class="iconeTamanhoSobre" src="img/icones/s.png" alt=""></a>
+        </div>
+
+        <div class="headerPadrao">
+            <a href="TelaImoveis.html"><img class="iconeCasa" src="img/icones/image-removebg-preview.png" alt=""></a>
+        </div>
+        <!-- FIM do codigo alterado para abrir a tela de SOBRE como NOVA PG #RENAN -->
+
+
+        <!-- codigo alterado para abrir a tela de cadastro como popup #RENAN -->
+
+        <button class="iconeTamanhoUsuario" onclick="executarFuncao()"><img src="img/icones/ei_user.png" alt=""></button>
+
+        <div class="background" id="background">
+
+            <div class="popup" id="popup">
+                <div class="popup-container" id="popupContainer">
+                    <div class="popup-content" id="conteudoPopup"></div>
+                </div>
+            </div>
+            <!-- FIM do codigo alterado para abrir a tela de cadastro como popup #RENAN -->
+    </header>
+    <section class="container">
+        <ul class="slider">
+            <li>
+                <input type="radio" id="slide1" name="slide" checked>
+                <label for="slide1"></label>
+                <img src="img/casas/casa2.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide2" name="slide">
+                <label for="slide2"></label>
+                <img src="img/casas/interiores/quarto2.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide3" name="slide" checked>
+                <label for="slide3"></label>
+                <img src="img/casas/interiores/cozinha2.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide4" name="slide" checked>
+                <label for="slide4"></label>
+                <img src="img/casas/interiores/salas2.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide5" name="slide" checked>
+                <label for="slide5"></label>
+                <img src="img/casas/interiores/banheiroCasa2.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide6" name="slide" checked>
+                <label for="slide6"></label>
+                <img src="img/casas/interiores/churrasqueiracasa2.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide6" name="slide" checked>
+                <label for="slide6"></label>
+                <img src="img/casas/interiores/lavanderiaCasa2.png" />
+            </li>
+        </ul>
+        <ul class="miniatura">
+            <li onclick="changeSlide(0)">
+                <img src="img/casas/casa2.png" />
+            </li>
+            <li onclick="changeSlide(1)">
+                <img src="img/casas/interiores/quarto2.png" />
+            </li>
+            <li onclick="changeSlide(2)">
+                <img src="img/casas/interiores/cozinha2.png" />
+            </li>
+            <li onclick="changeSlide(3)">
+                <img src="img/casas/interiores/salas2.png" />
+            </li>
+            <li onclick="changeSlide(4)">
+                <img src="img/casas/interiores/banheiroCasa2.png" />
+            </li>
+            <li onclick="changeSlide(5)">
+                <img src="img/casas/interiores/churrasqueiracasa2.png" />
+            </li>
+            <li onclick="changeSlide(6)">
+                <img src="img/casas/interiores/lavanderiaCasa2.png" />
+            </li>
+            
+        </ul>
+        <div id="Detalhes">
+            <img src="img/icones/rascu-removebg-preview.png" alt="">
+        </div>
+
+        <div class="sobreQuadro">
+            <p>
+                askjdhaskjdhkajshdaskjhdasfdhffffss<br>
+                kjdhakjhdakjdhakjdhakjdhakfdhdfffs<br>
+                askjdhaskjdhkajshdaskjhdasffffffssf<br>
+                kjdhakjhdakjdhakjdhakjdfffffffhkssd<br>
+                askjdhaskjdhkajshdaskjfffffffhdsaaa<br>
+                kjdhakjhdakjdhakjdhakjdfffffffhasaa<br>
+                askjdhaskjdhkajshdaskjfffffffhsssaa<br>
+                kjdhakjhdakjdhakjaaaadhfffffffakssk<br>
+                kjdhakjhdakjdhakjaaaadhfffffffakssk<br>
+                sdashkjdajdsadasda </p>
+        </div>
+
+        <div id="Resumo">
+            <img src="img/icones/resumo-removebg-preview.png" alt="" />
+        </div>
+
+        <div class="sobreQuadro2">
+            <div id="iconeCama">
+                <img src="img/icones/cama.png" alt="" />
+            </div>
+            <div id="iconeChuveiro">
+                <img src="img/icones/chuveiro.png" alt="" />
+            </div>
+            <div id="iconeCozinha">
+                <img src="img/icones/cozinha.png" alt="" />
+            </div>
+            <div id="iconeSala">
+                <img src="img/icones/sala.png" alt="" />
+            </div>
+            <div id="iconeCarro">
+                <img src="img/icones/carro.png" alt="" />
+            </div>
+
+        </div>
+
+        <div class="linha">
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            <br> <br> <br>
+        </div>
+
+    </section>
+    <footer class="rodape">
+        <h2>Contatos:</h2>
+        <div class="rodapeItems">
+            <img src="img/icones/logos_whatsapp-icon.png" alt="" class="icone1">
+            <span>(11) 4002-8922</span>
+        </div>
+        <div class="rodapeItems">
+            <img src="img/icones/skill-icons_instagram.png" alt="" class="icone2">
+            <span>@LarHouseImobiliaria</span>
+        </div>
+        <div class="rodapeItems">
+            <img src="img/icones/logos_facebook.png" alt="" class="icone3">
+            <span>LarHouseImobiliaria</span>
+        </div>
+        <div class="rodapeItems">
+            <img src="img/icones/logos_google-gmail.png" alt="" class="icone4">
+            <span>LarHouseImobiliaria@gmail.com</span>
+        </div>
+        <div class="rodapeItems">
+            <img src="img/icones/logos_google-maps.png" alt="" class="icone5">
+            <span class="end">Av. José da Casa Verde, 182 - Centro, SP</span>
+        </div>
+    </footer>
+</body>
+<script src="teste.js"></script>
+
+</html>

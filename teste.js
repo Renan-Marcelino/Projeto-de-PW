@@ -164,3 +164,8 @@ function verificarLogin() {
 // #RENAN *** #RENAN *** #RENAN
 
 
+ // Função para alterar o slide quando uma miniatura é clicada
+ function changeSlide(slideNumber) {
+  const slides = document.querySelectorAll('.slider li input');
+  slides[slideNumber].checked = true;
+}

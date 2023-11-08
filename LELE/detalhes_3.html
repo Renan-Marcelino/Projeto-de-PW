@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang="en">
+    <head>
+        <title>Lar House Imobiliária</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/TelaImoveis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto&display=swap" rel="stylesheet">
+    <script>
+    // Função para alterar o slide quando uma miniatura é clicada
+    function changeSlide(slideNumber) {
+        const slides = document.querySelectorAll('.slider li input');
+        slides[slideNumber].checked = true;
+    }
+    </script>
+
+    </head>
+    <body>
+        <header class="headerPadrao">
+            <img class="iconeTamanhoLogo" src="img/MicrosoftTeams-image-removebg-preview (2).png" alt="aaaa">
+                <div id="top">  
+                    <img src="img/image-removebg-preview (1).png" alt=""/> 
+                </div>
+                <div class="headerPadrao">
+                    <img class="iconeCasa" src="img/image-removebg-preview.png" alt="">
+                    <img class="iconeTamanhoUser" src="img/ei_user.png" alt="">
+                </div>
+        </header>
+        <section class="container">
+        <ul class="slider">
+            <li>
+                <input type="radio" id="slide1" name="slide" checked>
+                <label for="slide1"></label>
+                <img src="img/interiores/cozinha3.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide2" name="slide">
+                <label for="slide2"></label>
+                <img src="img/interiores/quarto3.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide3" name="slide" checked>
+                <label for="slide3"></label>
+                <img src="img/interiores/salas3.png" />
+            </li>
+        </ul>  
+        <ul class="miniatura">
+            <li onclick="changeSlide(0)">
+                <img src="img/interiores/cozinha3.png" />
+            </li>
+            <li onclick="changeSlide(1)">
+                <img src="img/interiores/quarto3.png" />
+            </li>
+            <li onclick="changeSlide(2)">
+                <img src="img/interiores/salas3.png" />
+            </li>
+        </ul>
+        </section>
+         <footer class="rodape">
+        <h2>Contatos:</h2>
+        <div class="rodapeItems">
+            <img src="img/logos_whatsapp-icon.png" alt="" class="icone1">
+            <span>(11) 4002-8922</span>
+        </div>
+        <div class="rodapeItems">
+            <img src="img/skill-icons_instagram.png" alt="" class="icone2">
+            <span>@LarHouseImobiliaria</span>
+        </div>
+        <div class="rodapeItems">
+            <img src="img/logos_facebook.png" alt="" class="icone3">
+            <span>LarHouseImobiliaria</span>
+        </div>
+        <div class="rodapeItems">
+            <img src="img/logos_google-gmail.png" alt="" class="icone4">
+            <span>LarHouseImobiliaria@gmail.com</span>
+        </div>
+        <div class="rodapeItems">
+            <img src="img/logos_google-maps.png" alt="" class="icone5">
+            <span>Av. José da Casa Verde, 182 - Centro, SP</span>
+        </div>
+    </footer>
+    </body>
+</html>
