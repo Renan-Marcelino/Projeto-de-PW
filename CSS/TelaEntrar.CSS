@@ -1,0 +1,393 @@
+@media only screen and (min-width: 1700px){
+  
+  #quadrado {
+    position: relative;
+    display: flex;
+    top: 488px;
+    left: 460px;
+    transform: translate(50%, -50%);
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 710px;
+  }
+  
+  .BTN-fechar {
+    position: absolute;
+    top: 54.9px;
+    right: 44.6px;
+    transform: translate(50%, -50%);
+    font-size: 34.4px;
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
+
+  .BTN-voltar {
+    border: none;
+    background: none;
+
+  }
+  
+  .img {
+    padding-top: 1px;
+    padding-left: 90px;
+    height: 300px;
+    width: 300px;
+  }
+  
+  .google {
+    position: absolute;
+    top: 322px;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-size: 74px;
+    cursor: pointer;
+  }
+  
+  .email {
+    position: absolute;
+    top: 62%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    transform: scale(1.5);
+  
+  }
+  
+  .senha {
+    position: absolute;
+    top: 72%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    transform: scale(1.5);
+  }
+  
+  .Entrar {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    height: 35px;
+    width: 180px;
+    font-size: 26px;
+    background-color: rgb(74, 220, 162);
+  }
+  
+  .botao-entrar-sem-borda {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000; 
+    position: absolute;
+    top: 37%;
+    left: 35.5%;
+    transform: translate(-50%, -130%);
+    height: 28px;
+    width: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .botao-cadastrar-sem-borda {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000; 
+    position: absolute;
+    top: 37.5%;
+    left: 53.2%;
+    transform: translate(-50%, -130%);
+    height: 28px;
+    width: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .ou {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -130%);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 33;
+  }
+  
+  .STR-email {
+    position: absolute;
+    top: 57%;
+    left: 29.5%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .STR-senha {
+    position: absolute;
+    top: 67%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .STR-Esqueci-Minha-Senha {
+    position: absolute;
+    cursor: pointer;
+    top: 76.3%;
+    left: 61.4%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .linha1 {
+    width: 79px;
+    height: 2.6px;
+    background-color: rgb(0, 0, 0);
+    border: #000000;
+    position: absolute;
+    top: 35.5%;
+    left: 41.5%;
+    transform: translate(-50%, -130%);
+    z-index: 99;
+  }
+  
+  .linha2 {
+    width: 98px;
+    height: 1.3px;
+    background-color: rgb(0, 0, 0);
+    border: #000000;
+    position: absolute;
+    top: 35.3%;
+    left: 59.1%;
+    transform: translate(-50%, -130%);
+    z-index: 99;
+  }
+  
+  #mostrarSenha {
+    border: none;
+    font-size: 24px;
+    background: none;
+  }
+  
+  .mostrarSenha {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 72%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 20px;
+    background: none;
+  }
+  
+  .icone {
+    border: none;
+    cursor: pointer;
+    width: 4px;
+    height: 8px;
+    top: 76%;
+    padding-left: 1%;
+    transform: translate(-50%, -50%);
+  }
+  
+}
+
+
+@media only screen and (max-width: 1680px){
+  
+  #quadrado {
+    position: relative;
+    display: flex;
+    top: 300px;
+    left: 358px;
+    transform: translate(50%, -50%);
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 430px;
+  }
+  
+  .BTN-fechar {
+    position: absolute;
+    top: 32px;
+    right: 25px;
+    transform: translate(50%, -50%);
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .img {
+    padding-top: 2px;
+    padding-left: 67px;
+    height: 160px;
+    width: 160px;
+  }
+  
+  .google {
+    position: absolute;
+    top: 210px;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-size: 54px;
+    cursor: pointer;
+  }
+  
+  .email {
+    position: absolute;
+    top: 82.9%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 160px;
+    width: 560px;
+  }
+  
+  .senha {
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 22px;
+    width: 160px;
+  }
+  
+  .Entrar {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    height: 28px;
+    width: 130px;
+    font-size: 16px;
+    background-color: rgb(74, 220, 162);
+  }
+  
+  .botao-entrar-sem-borda {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000; 
+    position: absolute;
+    top: 40%;
+    left: 33%;
+    transform: translate(-50%, -130%);
+    height: 28px;
+    width: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .botao-cadastrar-sem-borda {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: #000000; 
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -130%);
+    height: 28px;
+    width: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .ou {
+    position: absolute;
+    top: 60.5%;
+    left: 50%;
+    transform: translate(-50%, -130%);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 33;
+  }
+  
+  .STR-email {
+    position: absolute;
+    top: 60.5%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .STR-senha {
+    position: absolute;
+    top: 70.5%;
+    left: 29.8%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .STR-Esqueci-Minha-Senha {
+    position: absolute;
+    cursor: pointer;
+    top: 80.4%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .linha1 {
+    width: 59px;
+    height: 1.6px;
+    background-color: rgb(0, 0, 0);
+    border: #000000;
+    position: absolute;
+    top: 35.5%;
+    left: 38.8%;
+    transform: translate(-50%, -130%);
+    z-index: 99;
+  }
+  
+  .linha2 {
+    width: 88px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    border: #000000;
+    position: absolute;
+    top: 35.3%;
+    left: 62.4%;
+    transform: translate(-50%, -130%);
+    z-index: 99;
+  }
+  
+  #mostrarSenha {
+    border: none;
+    font-size: 17px;
+  }
+  
+  .mostrarSenha {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 76.6%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 16px;
+  }
+  
+  .icone {
+    border: none;
+    cursor: pointer;
+    width: 4px;
+    height: 8px;
+    top: 76%;
+    padding-left: 1%;
+    transform: translate(-50%, -50%);
+  }
+}

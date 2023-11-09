@@ -169,3 +169,26 @@ function verificarLogin() {
   const slides = document.querySelectorAll('.slider li input');
   slides[slideNumber].checked = true;
 }
+// Obtém o elemento da imagem e do botão
+const imagem = document.getElementById('imagem');
+const botaoTrocarImagem = document.getElementById('trocarImagem');
+
+// Define um array com as URLs das imagens que você deseja alternar
+const imagens = ['../img/icones/favoritos.svg', '../img/icones/favoritos2.svg'];
+
+// Variável para rastrear o índice da imagem atual
+let indiceImagemAtual = 0;
+
+// Adicione um ouvinte de evento para o botão
+botaoTrocarImagem.addEventListener('click', function() {
+    // Altera a origem da imagem para a próxima imagem no array
+    indiceImagemAtual = (indiceImagemAtual + 1) % imagens.length;
+    imagem.src = imagens[indiceImagemAtual];
+
+    // Verifica se a imagem atual é a "favoritos2" e aumenta o tamanho
+    if (indiceImagemAtual === 1) { // Índice 1 corresponde a "favoritos2"
+        imagem.style.minWidth = '58px'; // Ajuste o tamanho conforme necessário
+    } else {
+        imagem.style.maxWidth = '100%'; // Volta para o tamanho original se for outra imagem
+    }
+});
