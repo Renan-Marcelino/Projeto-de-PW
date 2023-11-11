@@ -15,7 +15,7 @@
         
         <button class="fechar" onclick="fecharPopup()"><iconify-icon icon="icon-park:big-x" flip="horizontal,vertical"></iconify-icon></button>
         
-        <form action="https://api.sheetmonkey.io/form/9Xz3g5h3aQzanD5rQxhit4" method="post">
+        <!--<form action="https://api.sheetmonkey.io/form/9Xz3g5h3aQzanD5rQxhit4" method="post">
             <span class="nome">
                 <input type="text" placeholder="nome" name="name">
             </span>
@@ -33,8 +33,28 @@
             </span>
             
             <button class="Cadastrar" onclick="confirmar()" onclick="fecharPopup()" type="button">Cadastrar</button>
-        </form>
+        </form>-->
         
+        <form id="myForm" onsubmit="return confirmar() && validateForm() ">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" class="nome" required> 
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="email2" required>
+        
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" class="senha2" required>
+        
+            <label for="confirmPassword">Confirmar Senha:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" class="Confirmar-Senha" required>
+        
+            <div id="error"></div>
+        
+            <button class="Cadastrar" type="submit">Enviar</button>
+        </form>
+
+
+
         <div id="modalCadastro" class="modal">
             <div id="modalContentCadastro" class="modal-content">
                 <button class="BTN-voltar" onclick="fecharTelaCadastro()">Entrar</button>
