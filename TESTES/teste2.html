@@ -3,44 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário com Validação</title>
-    <style>
-        .error {
-            color: red;
-        }
-    </style>
+    <title>Segunda Página</title>
 </head>
 <body>
 
-<script>
-    // Função para confirmar e armazenar no localStorage
-    function confirmar() {
-        localStorage.setItem('confirmacao', true);
-    }
+<script src="teste2.js"></script>
 
-    // Adicionar um ouvinte de evento DOMContentLoaded
-    document.addEventListener('DOMContentLoaded', function () {
-        // Selecionar o formulário
-        var form = document.getElementById('myForm');
+<h2>Segunda Página</h2>
 
-        // Adicionar um ouvinte de evento submit ao formulário
-        form.addEventListener('submit', function (event) {
-            // Executar a função confirmar
-            confirmar();
-            
-            // Aqui você pode adicionar outras lógicas relacionadas ao envio do formulário
-
-            // Impedir o envio do formulário tradicional
-            event.preventDefault();
-        });
-    });
-</script>
-
-<h2>Formulário com Validação</h2>
-<form id="myForm">
-    <!-- Seus campos e outros elementos do formulário aqui -->
-    <button type="submit">Enviar</button>
-</form>
+<!-- Campo para exibir o nome armazenado -->
+<p id="displayNome"></p>
 
 </body>
 </html>

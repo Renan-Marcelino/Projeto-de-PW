@@ -22,9 +22,10 @@
 }
 
 .nome-usuario {
-    position: relative;
+    position: absolute;
     color: #ffffff;
     margin: 0 auto;
+    font-size: 80px;
 }
 
 p {

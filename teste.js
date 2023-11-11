@@ -1,7 +1,5 @@
 // funçao para abrir tela LOGIN #RENAN
 
-var confirmacao = false;
-
 function abrirPopup() {
     var background = document.getElementById("background");
     var popup = document.getElementById("popup");
@@ -18,61 +16,38 @@ function abrirPopup() {
     xhr.send();
 }
 
-function funcaoOriginal() {
-  abrirPopup(); 
-}
-
-function funcaoAposConfirmacao() {
-  abrirlogin();  
-}
-
-
 function abrirlogin() {
-  var background = document.getElementById("background");
-  var popup = document.getElementById("popup");
-  var conteudoPopup = document.getElementById("conteudoPopup");
+    var background = document.getElementById("background");
+    var popup = document.getElementById("popup");
+    var conteudoPopup = document.getElementById("conteudoPopup");
 
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", "TelaPerfil.html", true);
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState == 4 && xhr.status == 200) {
-      conteudoPopup.innerHTML = xhr.responseText;
-      background.style.display = "flex";
-    }
-  };
-  xhr.send();
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "TelaPerfil.html", true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            conteudoPopup.innerHTML = xhr.responseText;
+            background.style.display = "flex";
+        }
+    };
+    xhr.send();
 }
+    // Adicionar um ouvinte de evento DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', function () {
+        // Selecionar o formulário
+        var form = document.getElementById('myForm');
 
+        // Adicionar um ouvinte de evento submit ao formulário
+        form.addEventListener('submit', function (event) {
+            // Executar a função confirmar
+            confirmar();
 
-function executarFuncao() {
-  if (confirmacao) {
-    funcaoAposConfirmacao();
-  } else {
-    funcaoOriginal();
-  }
-  function confirmar() {
-    confirmacao = true;
-    localStorage.setItem('confirmacao', true);
-    console.log('Variável confirmacao definida como true');
-}
+            // Aqui você pode adicionar outras lógicas relacionadas ao envio do formulário
 
-// Adicionar um ouvinte de evento DOMContentLoaded
-document.addEventListener('DOMContentLoaded', function () {
-    // Selecionar o formulário
-    var form = document.getElementById('myForm');
-
-    // Adicionar um ouvinte de evento submit ao formulário
-    form.addEventListener('submit', function (event) {
-        // Executar a função confirmar
-        confirmar();
-        
-        // Aqui você pode adicionar outras lógicas relacionadas ao envio do formulário
-
-        // Impedir o envio do formulário tradicional
-        event.preventDefault();
+            // Impedir o envio do formulário tradicional
+            event.preventDefault();
+        });
     });
-});
-}
+
 
 // FIM da funçao para abrir tela LOGIN #RENAN
 
@@ -222,56 +197,65 @@ botaoTrocarImagem.addEventListener('click', function() {
         }
     }
 
-    function validateForm() {
-        localStorage.setItem('confirmacao', true);
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var password = document.getElementById('password').value;
-        var confirmPassword = document.getElementById('confirmPassword').value;
+// Função para validar o formulário
+function validateForm() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    var confirmPassword = document.getElementById('confirmPassword').value;
 
-        // Validar nome sem caracteres especiais
-        var nameRegex = /^[a-zA-Z ]*$/;
-        if (!nameRegex.test(name)) {
-            displayError("Nome inválido. Use apenas letras e espaços.");
-            return false;
-        }
-
-        // Validar email
-        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            displayError("Email inválido. Insira um email válido.");
-            return false;
-        }
-
-        // Validar senha
-        if (password.length < 6) {
-            displayError("A senha deve ter pelo menos 6 caracteres.");
-            return false;
-        }
-
-        // Confirmar senha
-        if (password !== confirmPassword) {
-            displayError("As senhas não coincidem. Por favor, revise.");
-            return false;
-        }
-
-        // Armazenar nome no localStorage
-        localStorage.setItem('storedName', name);
-
-        // Exibir nome na tela após envio do formulário
-        document.getElementById('displayNome').innerText = "Nome armazenado: " + name;
-
-        // Limpar mensagens de erro, se houver
-        document.getElementById('error').innerHTML = "";
-
-        // Evitar o envio do formulário tradicional
+    // Validar nome sem caracteres especiais
+    var nameRegex = /^[a-zA-Z ]*$/;
+    if (!nameRegex.test(name)) {
+        displayError("Nome inválido. Use apenas letras e espaços.");
         return false;
     }
 
-    function displayError(message) {
-        document.getElementById('error').innerHTML = "<p class='error'>" + message + "</p>";
+    // Validar email
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        displayError("Email inválido. Insira um email válido.");
+        return false;
     }
 
-window.onload = initializeForm;
+    // Validar senha
+    if (password.length < 6) {
+        displayError("A senha deve ter pelo menos 6 caracteres.");
+        return false;
+    }
 
+    // Confirmar senha
+    if (password !== confirmPassword) {
+        displayError("As senhas não coincidem. Por favor, revise.");
+        return false;
+    }
 
+    // Redirecionar para a segunda página com o nome na URL
+    window.location.href = 'TelaLogada.html?storedName=' + encodeURIComponent(name);
+
+    // Limpar mensagens de erro, se houver
+    displayError("");
+
+    // Evitar o envio do formulário tradicional
+    return false;
+}
+
+// Função para exibir mensagens de erro
+function displayError(message) {
+    document.getElementById('error').innerHTML = "<p class='error'>" + message + "</p>";
+}
+
+// Função para inicializar a segunda página
+function initializeSecondPage() {
+    // Recuperar o nome armazenado na URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var nomeArmazenado = urlParams.get('storedName');
+
+    // Exibir o nome na tela se existir
+    if (nomeArmazenado) {
+        document.getElementById('displayNome').innerText = "Nome armazenado: " + nomeArmazenado;
+    }
+}
+
+// Inicializar a segunda página ao carregar
+window.onload = initializeSecondPage;
