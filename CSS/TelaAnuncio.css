@@ -371,10 +371,16 @@ h4 {
 
 .whats {
     position: absolute;
-    top: 75.5%;
+    color: #FFFFFF;
+    top: 79%;
     left: 80%;
-    scale: 1.3;
+    scale: 3.4;
     cursor: pointer;
+}
+
+.BTN-Age {
+    background: none;
+    border: none;
 }
 
 .age {
@@ -387,7 +393,7 @@ h4 {
 .favoritar {
     position: absolute;
     top: 87%;
-    left: 50%;
+    left: 49%;
     color: hsl(0, 18%, 92%);
 }
 
@@ -416,6 +422,18 @@ h4 {
 #trocarImagem {
     background: none;
     border: none;
+}
+
+.background {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    backdrop-filter: blur(1px);
 }
 
 /* ************************************ #CODIGO PINA FIM */

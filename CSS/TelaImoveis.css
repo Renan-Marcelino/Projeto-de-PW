@@ -59,8 +59,8 @@ body {
 .iconeTamanhoUsuario {
     position: relative;
     cursor: pointer;
-    background-color: transparent; 
-    border: none; 
+    background-color: transparent;
+    border: none;
     right: 1.35%;
 }
 
@@ -93,7 +93,7 @@ body {
     margin-bottom: 20px;
     margin-top: 20px;
     padding: 10px;
-    font-size: bold;  
+    font-size: bold;
 }
 
 .rodape {
@@ -103,15 +103,15 @@ body {
     justify-content: space-between;
     height: 70px;
     position: relative;
-    border: solid 3px ;  
-    border-color: #4ADCA2; 
+    border: solid 3px;
+    border-color: #4ADCA2;
     top: -5px;
 }
 
 .rodapeItems {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 h2 {
@@ -127,9 +127,9 @@ h2 {
     margin-right: 25px;
 }
 
-span{
+span {
     margin-top: 1px;
-    font-weight: bold;  
+    font-weight: bold;
     font-family: 'segoe ui';
 }
 
@@ -138,9 +138,9 @@ span{
     display: none;
     top: 0;
     left: 0;
-    width: 100%;   
+    width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
-    backdrop-filter: blur(1px); 
-  }
+    backdrop-filter: blur(1px);
+}

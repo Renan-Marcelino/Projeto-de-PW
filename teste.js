@@ -31,6 +31,23 @@ function abrirlogin() {
     };
     xhr.send();
 }
+
+function abrirContato() {
+    var background = document.getElementById("background");
+    var popup = document.getElementById("popup");
+    var conteudoPopup = document.getElementById("conteudoPopup");
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "TelaEntrar.html", true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            conteudoPopup.innerHTML = xhr.responseText;
+            background.style.display = "flex";
+        }
+    };
+    xhr.send();
+}
+
     // Adicionar um ouvinte de evento DOMContentLoaded
     document.addEventListener('DOMContentLoaded', function () {
         // Selecionar o formulário
