@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/TelaCadastro.css">
+    <link rel="stylesheet" href="CSS/TelaContato.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <title>Lar House Imobiliária</title>
 </head>
@@ -15,67 +15,25 @@
         
         <button class="fechar" onclick="fecharPopup()"><iconify-icon icon="icon-park:big-x" flip="horizontal,vertical"></iconify-icon></button>
         
-        <!--<form action="https://api.sheetmonkey.io/form/9Xz3g5h3aQzanD5rQxhit4" method="post">
-            <span class="nome">
-                <input type="text" placeholder="nome" name="name">
-            </span>
-            
-            <span class="email2">
-                <input type="email" placeholder="Email" name="email">
-            </span>
-            
-            <span class="senha2">
-                <input type="password" placeholder="senha" name="senha">
-            </span>
-            
-            <span class="Confirmar-Senha">
-                <input type="password" placeholder="Confirmar Senha" name="confirmar senha">
-            </span>
-            
-            <button class="Cadastrar" onclick="confirmar()" onclick="fecharPopup()" type="button">Cadastrar</button>
-        </form>-->
-        
         <form id="myForm" onsubmit="return validateForm() ">
-            <label for="name">Nome:</label>
+            <label for="name" class="STR-Nome">NOME:</label>
             <input type="text" id="name" name="name" class="nome" required> 
         
-            <label for="email">Email:</label>
+            <label for="email" class="STR-Email2">EMAIL:</label>
             <input type="email" id="email" name="email" class="email2" required>
         
-            <label for="password">Senha:</label>
+            <label for="password" class="STR-Senha2">DUVIDA:</label>
             <input type="password" id="password" name="password" class="senha2" required>
         
-            <label for="confirmPassword">Confirmar Senha:</label>
+            <label for="confirmPassword" class="ConfirmarSenha">SOBRENOME:</label>
             <input type="password" id="confirmPassword" name="confirmPassword" class="Confirmar-Senha" required>
         
+            <label for="MSG" class="MSG">Mensagem...:</label>
+            <textarea type="text" id="MSG" name="MSG" class="msg" placeholder="Olá, tenho interesse desse imovel..." style="resize: none" required></textarea>
             <div id="error"></div>
         
             <button class="Cadastrar" type="submit">Enviar</button>
         </form>
-
-
-
-        <div id="modalCadastro" class="modal">
-            <div id="modalContentCadastro" class="modal-content">
-                <button class="BTN-voltar" onclick="fecharTelaCadastro()">Entrar</button>
-            </div>
-        </div>
-
-        <button class="botao-cadastrar-sem-borda2">Cadastrar</button>
-
-        <p class="STR-Nome">Nome</p>
-
-        <p class="STR-Email2">Email</p>
-
-        <p class="STR-Senha2">Senha</p>
-
-        <p class="ConfirmarSenha">Confirmar Senha</p>
-
-        <hr class="linha1-2">
-
-        <hr class="linha2-2">
-
-    </div>
 </body>
 <script src="teste.js"></script>
 </html>

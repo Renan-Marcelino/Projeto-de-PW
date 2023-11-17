@@ -26,9 +26,9 @@ body {
 
 .botoes {
     position: relative;
-    right: 20%;
+    right: 20.5%;
     display: flex;
-    height: 55%;
+    height: 52%;
     width: 10%;
     scale: 1.2;
     justify-content: space-between;
@@ -65,10 +65,11 @@ body {
 }
 
 .container {
-    background-image: url('../img/cidade\ de\ sp\ 2.png');
+    background-image: url('../img/cidade\ de\ sp\ 2.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 86.6vh;
+    width: 100%;
     overflow-y: hidden;
 }
 

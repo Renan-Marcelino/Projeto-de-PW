@@ -14,16 +14,18 @@ body {
 }
 
 .container {
-    background-image: url('../img/cidade\ de\ sp\ 2.png');
+    background-image: url('../img/cidade\ de\ sp\ 2.jpeg');
     background-size: cover;
+    height: 100%;
+    width: 100%;
     height: auto;
 }
 
 .botoes {
     position: relative;
-    right: 16%;
+    right: 21%;
     display: flex;
-    height: 55%;
+    height: 52%;
     width: 10%;
     scale: 1.2;
     justify-content: space-between;
@@ -34,29 +36,21 @@ body {
     margin-top: 1%;
     width: 300%;
     padding: 5%;
-    right: 240.1%;
+    right: 349.4%;
 }
 
 .iconeTamanhopesquisa {
     position: absolute;
     top: 1.8%;
-    right: 35.2%;
+    right: 35.65%;
     cursor: pointer;
 }
 
 .iconeTamanhoSobre {
     position: relative;
     top: 4px;
-    left: 490%;
+    right: 123%;
     cursor: pointer;
-}
-
-.iconeTamanhoUsuario {
-    position: relative;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    left: 6.4%;
 }
 
 .iconeCasa {
@@ -64,7 +58,7 @@ body {
     margin-right: 1px;
     vertical-align: sub;
     width: 44px;
-    left: 400%;
+    right: 82%;
     cursor: pointer;
 }
 
@@ -266,7 +260,6 @@ h4 {
     padding: 160px;
     padding-top: 8.2%;
     padding-bottom: 8%;
-    width: 20px;
     left: 11.2%;
     bottom: 0;
 }
@@ -372,7 +365,7 @@ h4 {
 .whats {
     position: absolute;
     color: #FFFFFF;
-    top: 79%;
+    top: 75%;
     left: 80%;
     scale: 3.4;
     cursor: pointer;
@@ -385,21 +378,21 @@ h4 {
 
 .age {
     position: absolute;
-    top: 87%;
+    top: 84%;
     left: 70%;
     color: hsl(0, 18%, 90%);
 }
 
 .favoritar {
     position: absolute;
-    top: 87%;
+    top: 84%;
     left: 49%;
     color: hsl(0, 18%, 92%);
 }
 
 .fav {
     position: absolute;
-    top: 73%;
+    top: 70%;
     left: 50%;
     scale: 1;
     cursor: pointer;
@@ -410,9 +403,9 @@ h4 {
     text-align: center;
     padding: 1px;
     position: absolute;
-    left: 60.4%;
+    left: 40.4%;
     bottom: 5.5%;
-    height: 30%;
+    height: 90%;
 }
 
 .imagem-alternativa {

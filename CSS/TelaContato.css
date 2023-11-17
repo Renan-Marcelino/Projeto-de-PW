@@ -1,0 +1,125 @@
+@media only screen and (min-width: 1700px) {
+
+    .fundo {
+        position: absolute;
+        display: flex;
+        top: 460.8px;
+        left: 255px;
+        transform: translate(50%, -50%);
+        border: 2px solid black;
+        background-color: rgb(255, 255, 255);
+        width: 750px;
+        height: 600px;
+        z-index: 999;
+    }
+
+    .fechar {
+        position: absolute;
+        top: 6%;
+        right: 4%;
+        transform: translate(50%, -50%);
+        font-size: 34px;
+        border: none;
+        cursor: pointer;
+        background: none;
+    }
+
+    .img {
+        position: relative;
+        top: -8%;
+        right: 8%;
+        height: 300px;
+        width: 300px;
+    }
+
+    .nome {
+        position: absolute;
+        top: 39%;
+        left: 16%;
+        transform: translate(-50%, -50%);
+        transform: scale(1.7);
+    }
+
+    .email2 {
+        position: absolute;
+        top: 39%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        transform: scale(1.7);
+    }
+
+    .senha2 {
+        position: absolute;
+        top: 53%;
+        left: 16%;
+        transform: translate(-50%, -42%);
+        transform: scale(1.7);
+    }
+
+    .Confirmar-Senha {
+        position: absolute;
+        top: 53%;
+        left: 60%;
+        transform: translate(-50%, -42%);
+        transform: scale(1.7);
+    }
+
+    .msg {
+        position: absolute;
+        display: fixed;
+        top: 63%;
+        left: 8.1%;
+        width: 82%;
+        height: 19%;
+    }
+
+    .msg::placeholder {
+        position: absolute;
+        top: 4%; 
+        left: 1%;
+    }
+
+    .Cadastrar {
+        position: absolute;
+        top: 88%;
+        left: 50.5%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        height: 35px;
+        width: 180px;
+        font-size: 26px;
+        background-color: rgb(74, 220, 162);
+    }
+
+    .STR-Nome {
+        position: absolute;
+        top: 38%;
+        left: 12%;
+        transform: translate(-50%, -130%);
+        font-size: 18px;
+    }
+
+    .STR-Email2 {
+        position: absolute;
+        top: 52%;
+        left: 12.5%;
+        transform: translate(-50%, -130%);
+        font-size: 18px;
+    }
+
+    .STR-Senha2 {
+        position: absolute;
+        top: 52%;
+        left: 57.2%;
+        transform: translate(-50%, -130%);
+        font-size: 18px;
+    }
+
+    .ConfirmarSenha {
+        position: absolute;
+        top: 38%;
+        left: 60%;
+        transform: translate(-50%, -130%);
+        font-size: 18px;
+    }
+}

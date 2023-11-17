@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/TelaAnuncio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href=" https://fonts.cdnfonts.com/css/ingrid-darling " rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto&display=swap" rel="stylesheet">
+    <title>Lar House Imobiliária</title>
+</head>
+
+<body>
+    <header class="headerPadrao">
+
+        <!-- codigo alterado para Voltar para a tela inicio #RENAN -->
+
+        <a href="TelaImoveis.html"><img class="iconeTamanhologo" src="img/MicrosoftTeams-image-removebg-preview (2).png"
+                alt="aaaa"></a>
+
+        <!-- FIM do codigo alterado para Voltar para a tela inicio #RENAN -->
+
+        <div class="botoes">
+            <button class="buttonArrow" id=" wrapper">
+                <span>Tipo</span>
+                <img src="img/icones/arrow.png" alt="icone" class="icone-a">
+            </button>
+            <button class="buttonArrow" id=" wrapper">
+                <span>Area²</span>
+                <img src="img/icones/arrow.png" alt="icone" class="icone-a">
+            </button>
+            <button class="buttonArrow" id=" wrapper">
+                <span>City</span>
+                <img src="img/icones/arrow.png" alt="icone" class="icone-a">
+            </button>
+        </div>
+
+        <div class="pesquisa">
+            <input class="barraPesquisa" type="text" placeholder="Buscar meu lar">
+            <img class="iconeTamanhopesquisa" src="img/icones/pesquisa.png" alt="">
+        </div>
+
+        <!-- codigo alterado para abrir a tela de SOBRE como NOVA PG #RENAN -->
+
+        <div class="headerPadrao">
+            <a href="TelaSobre.html"><img class="iconeTamanhoSobre" src="img/icones/s.png" alt=""></a>
+        </div>
+
+        <div class="headerPadrao">
+            <a href="TelaImoveis.html"><img class="iconeCasa" src="img/icones/image-removebg-preview.png" alt=""></a>
+        </div>
+        <!-- FIM do codigo alterado para abrir a tela de SOBRE como NOVA PG #RENAN -->
+
+
+        <!-- codigo alterado para abrir a tela de cadastro como popup #RENAN -->
+
+        <div class="background" id="background">
+
+            <div class="popup" id="popup">
+                <div class="popup-container" id="popupContainer">
+                    <div class="popup-content" id="conteudoPopup"></div>
+                </div>
+            </div>
+            <!-- FIM do codigo alterado para abrir a tela de cadastro como popup #RENAN -->
+    </header>
+    <section class="container">
+        <ul class="slider">
+            <li>
+                <input type="radio" id="slide1" name="slide" checked>
+                <label for="slide1"></label>
+                <img src="img/casas/casa3.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide2" name="slide">
+                <label for="slide2"></label>
+                <img src="img/casas/interiores/quarto3.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide3" name="slide" checked>
+                <label for="slide3"></label>
+                <img src="img/casas/interiores/cozinha3.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide4" name="slide" checked>
+                <label for="slide4"></label>
+                <img src="img/casas/interiores/salas3.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide5" name="slide" checked>
+                <label for="slide5"></label>
+                <img src="img/casas/interiores/banheirocasa3.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide6" name="slide" checked>
+                <label for="slide6"></label>
+                <img src="img/casas/interiores/churrasqueiracasa3.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide7" name="slide" checked>
+                <label for="slide7"></label>
+                <img src="img/casas/interiores/lavanderiacasa3.png" />
+            </li>
+            <li>
+                <input type="radio" id="slide1" name="slide" checked>
+                <label for="slide1"></label>
+                <img src="img/casas/casa3.png" />
+            </li>
+        </ul>
+        <ul class="miniatura">
+            <li onclick="changeSlide(0)">
+                <img src="img/casas/casa3.png" />
+            </li>
+            <li onclick="changeSlide(1)">
+                <img src="img/casas/interiores/quarto3.png" />
+            </li>
+            <li onclick="changeSlide(2)">
+                <img src="img/casas/interiores/cozinha3.png" />
+            </li>
+            <li onclick="changeSlide(3)">
+                <img src="img/casas/interiores/salas3.png" />
+            </li>
+            <li onclick="changeSlide(4)">
+                <img src="img/casas/interiores/banheirocasa3.png" />
+            </li>
+            <li onclick="changeSlide(5)">
+                <img src="img/casas/interiores/churrasqueiracasa3.png" />
+            </li>
+            <li onclick="changeSlide(6)">
+                <img src="img/casas/interiores/lavanderiacasa3.png" />
+            </li>
+
+        </ul>
+        <div id="Detalhes">
+            <img src="img/icones/rascu-removebg-preview.png" alt="">
+        </div>
+
+        <div class="sobreQuadro">
+            <p class="p">
+                askjdhaskjdhkajshdaskjhdasfdhff<br>
+                kjdhakjhdakjdhakjdhakjdhakfdhdf<br>
+                askjdhas kjdhkajshdaskjhdasfffff<br>
+                kjdha kjhdakjdhakjdha kjdfffffffh<br>
+                as kjdhaskjdhkajshda skjfffffffhd<br>
+                kjdha kjhdakjdhakjd hakjdfffffffh<br>
+                askjd haskjdhkajshd askjfffffffhs<br>
+                kjdhak jhdakjdhakj aaaadhfffffffa<br>
+                kjdha kjhdakjdhak jaaaadhfffffffa<br>
+                sdashkjdajda sdashkj dajdsasda<br>
+                sdashkjdajda sdashkj dajdsada sda</p>
+
+        </div>
+
+        <div id="Resumo">
+            <img src="img/icones/resumo-removebg-preview.png" alt="" />
+        </div>
+
+        <div class="sobreQuadro2">
+            <div id="iconeCama">
+                <img src="img/icones/cama.png" alt="" />
+            </div>
+            <div id="iconeChuveiro">
+                <img src="img/icones/chuveiro.png" alt="" />
+            </div>
+            <div id="iconeCozinha">
+                <img src="img/icones/cozinha.png" alt="" />
+            </div>
+            <div id="iconeSala">
+                <img src="img/icones/sala.png" alt="" />
+            </div>
+            <div id="iconeCarro">
+                <img src="img/icones/carro.png" alt="" />
+            </div>
+
+            <span class="num">
+                <p>2 2 2 2 2 </p>
+            </span>
+
+            <p class="area">Area²</p>
+
+            <p class="mt">250M²</p>
+
+            <img src="img/icones/logos_google-maps.png" alt="" class="mapa">
+            <p class="loc">Localização</p>
+            <span class="maps">Av. José da Casa Verde, 182 - Centro, SP</span>
+
+            <button id="trocarImagem"><img id="imagem" class="fav" src="img/icones/favoritos.svg"
+                    alt="Imagem Original"></button>
+            <p class="favoritar">Favoritar</p>
+
+
+            <button class="BTN-Age" onclick="abrirContato()"><iconify-icon icon="iconoir:forward-message"
+                    class="whats"></iconify-icon></button>
+            <p class="age">Agendar Visita</p>
+
+            <div class="linha">
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                <br> <br> <br>
+            </div>
+
+    </section>
+    <footer class="rodape">
+
+        <h2>Contatos:</h2>
+
+        <div class="rodapeItems">
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="img/icones/logos_whatsapp-icon.png" alt=""
+                    class="icone1"></a>
+            <span>(11) 4002-8922</span>
+        </div>
+        <div class="rodapeItems">
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/icones/skill-icons_instagram.png" alt=""
+                    class="icone2"></a>
+            <span>@LarHouseImobiliaria</span>
+        </div>
+        <div class="rodapeItems">
+            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="img/icones/logos_facebook.png"
+                    alt="" class="icone3"></a>
+            <span>LarHouseImobiliaria</span>
+        </div>
+        <div class="rodapeItems">
+            <a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser&ec=asw-gmail-globalnav-signin&theme=glif"
+                target="_blank"><img src="img/icones/logos_google-gmail.png" alt="" class="icone4"></a>
+            <span>LarHouseImobiliaria@gmail.com</span>
+        </div>
+        <div class="rodapeItems">
+            <a href="https://www.google.com.br/maps/place/Paulista+Im%C3%B3veis/@-23.6511975,-46.7835348,12z/data=!4m10!1m2!2m1!1simobiliaria+paulista!3m6!1s0x94ce5a35a143af5b:0xfdd21edfb9d84a2f!8m2!3d-23.6023467!4d-46.6348048!15sChRpbW9iaWxpYXJpYSBwYXVsaXN0YVoWIhRpbW9iaWxpYXJpYSBwYXVsaXN0YZIBEnJlYWxfZXN0YXRlX2FnZW5jeeABAA!16s%2Fg%2F1ptw57k9h?entry=ttu"
+                target="_blank"><img src="img/icones/logos_google-maps.png" alt="" class="icone5"></a>
+            <span class="end">Av. José da Casa Verde, 182 - Centro, SP</span>
+        </div>
+    </footer>
+</body>
+<script src="teste.js"></script>
+
+</html>

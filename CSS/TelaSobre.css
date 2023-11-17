@@ -27,10 +27,10 @@ body {
 .iconeCasa {
     position: relative;
     margin-top: 31%;
-    right: 32%;
+    right: 108%;
     vertical-align: sub;
     width: 44px;
-    top: -5px;
+    top: -7px;
 }
 
 .rodape {
@@ -76,7 +76,7 @@ span{
 }
 
 .container {
-    background-image: url('../img/cidade\ de\ sp\ 2.png');
+    background-image: url('../img/cidade\ de\ sp\ 2.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 86.6vh;
