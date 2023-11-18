@@ -1,40 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário com Validação</title>
     <style>
-        .error {
-            color: red;
+        /* Estilo para o alerta */
+        #alerta {
+            display: none;
+            background-color: yellow;
+            padding: 10px;
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
 
-<script src="teste2.js"></script>
+    <form id="myForm" onsubmit="return validateFormu()">
+        <label for="name" class="STR-Nome">NOME:</label>
+        <input type="text" id="name" name="name" class="nome" required>
 
-<h2>Formulário com Validação</h2>
-<form onsubmit="return validateForm()">
-    <label for="name">Nome:</label>
-    <input type="text" id="name" name="name" required>
+        <label for="email" class="STR-Email2">EMAIL:</label>
+        <input type="text" id="email" name="email" class="email2" required>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+        <label for="password" class="STR-Senha2">DUVIDA:</label>
+        <input type="email" id="password" name="password" class="senha2" required>
 
-    <label for="password">Senha:</label>
-    <input type="password" id="password" name="password" required>
+        <label for="confirmPassword" class="ConfirmarSenha">SOBRENOME:</label>
+        <input type="tel" pattern="[0-9]{11}" id="confirmPassword" name="confirmPassword" class="Confirmar-Senha"
+            required>
 
-    <label for="confirmPassword">Confirmar Senha:</label>
-    <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <label for="MSG" class="MSG">Mensagem...:</label>
+        <textarea type="text" id="MSG" name="MSG" class="msg" placeholder="Olá, tenho interesse nesse imovel..."
+            style="resize: none" required></textarea>
 
-    <div id="error"></div>
+        <div id="error"></div>
 
-    <button type="submit">Enviar</button>
-</form>
+        <button class="Cadastrar" type="submit">Enviar</button>
+    </form>
 
-<!-- Campo para exibir o nome armazenado -->
-<p id="displayNome"></p>
+    <div id="alerta">
+        Este é um alerta automático!
+    </div>
+
+    <script>
+        // Função para validar o formulário
+        function validateFormu() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+
+            // Validar nome sem caracteres especiais
+            var nameRegex = /^[a-zA-Z ]*$/;
+            if (!nameRegex.test(name)) {
+                displayError("Nome inválido. Use apenas letras e espaços.");
+                return false;
+            }
+
+            // Validar email
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                displayError("Email inválido. Insira um email válido.");
+                return false;
+            }
+
+            // Limpar mensagens de erro, se houver
+            displayError("");
+
+            // Exibir o alerta após uma validação bem-sucedida
+            var alerta = document.getElementById("alerta");
+            alerta.style.display = "block";
+
+            // Agendar a remoção do alerta após 3 segundos
+            setTimeout(function () {
+                alerta.style.display = "none";
+            }, 3000);
+
+            // Impedir o envio do formulário tradicional
+            return false;
+        }
+
+        // Função para exibir mensagens de erro
+        function displayError(message) {
+            var errorDiv = document.getElementById('error');
+            errorDiv.innerHTML = "<p class='error'>" + message + "</p>";
+        }
+    </script>
 
 </body>
+
 </html>
