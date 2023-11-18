@@ -15,21 +15,22 @@
         
         <button class="fechar" onclick="fecharPopup()"><iconify-icon icon="icon-park:big-x" flip="horizontal,vertical"></iconify-icon></button>
         
-        <form id="myForm" onsubmit="return validateForm() ">
+        <form id="myForm" onsubmit="return validateFormu() ">
             <label for="name" class="STR-Nome">NOME:</label>
             <input type="text" id="name" name="name" class="nome" required> 
         
             <label for="email" class="STR-Email2">EMAIL:</label>
-            <input type="email" id="email" name="email" class="email2" required>
+            <input type="text" id="name" name="name" class="email2" required>
         
             <label for="password" class="STR-Senha2">DUVIDA:</label>
-            <input type="password" id="password" name="password" class="senha2" required>
+            <input type="email" id="email" name="email" class="senha2" required>
         
             <label for="confirmPassword" class="ConfirmarSenha">SOBRENOME:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" class="Confirmar-Senha" required>
+            <input type="tel" pattern="[0-9]{11}" id="nome" name="nome" class="Confirmar-Senha" required>
         
             <label for="MSG" class="MSG">Mensagem...:</label>
-            <textarea type="text" id="MSG" name="MSG" class="msg" placeholder="Olá, tenho interesse desse imovel..." style="resize: none" required></textarea>
+            <textarea type="text" id="MSG" name="MSG" class="msg" placeholder="Olá, tenho interesse nesse imovel..." style="resize: none" required></textarea>
+            
             <div id="error"></div>
         
             <button class="Cadastrar" type="submit">Enviar</button>

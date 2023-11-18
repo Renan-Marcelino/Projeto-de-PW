@@ -48,22 +48,22 @@ function abrirContato() {
     xhr.send();
 }
 
-    // Adicionar um ouvinte de evento DOMContentLoaded
-    document.addEventListener('DOMContentLoaded', function () {
-        // Selecionar o formulário
-        var form = document.getElementById('myForm');
+// Adicionar um ouvinte de evento DOMContentLoaded
+document.addEventListener('DOMContentLoaded', function () {
+    // Selecionar o formulário
+    var form = document.getElementById('myForm');
 
-        // Adicionar um ouvinte de evento submit ao formulário
-        form.addEventListener('submit', function (event) {
-            // Executar a função confirmar
-            confirmar();
+    // Adicionar um ouvinte de evento submit ao formulário
+    form.addEventListener('submit', function (event) {
+        // Executar a função confirmar
+        confirmar();
 
-            // Aqui você pode adicionar outras lógicas relacionadas ao envio do formulário
+        // Aqui você pode adicionar outras lógicas relacionadas ao envio do formulário
 
-            // Impedir o envio do formulário tradicional
-            event.preventDefault();
-        });
+        // Impedir o envio do formulário tradicional
+        event.preventDefault();
     });
+});
 
 
 // FIM da funçao para abrir tela LOGIN #RENAN
@@ -72,7 +72,7 @@ function abrirContato() {
 
 function fecharPopup() {
     var background = document.getElementById("background");
-    background.style.display = "none"; 
+    background.style.display = "none";
 }
 
 // FIM da funçao para fechar tela Cadastro #RENAN
@@ -172,10 +172,10 @@ function verificarLogin() {
 // #RENAN *** #RENAN *** #RENAN
 
 
- // Função para alterar o slide quando uma miniatura é clicada
- function changeSlide(slideNumber) {
-  const slides = document.querySelectorAll('.slider li input');
-  slides[slideNumber].checked = true;
+// Função para alterar o slide quando uma miniatura é clicada
+function changeSlide(slideNumber) {
+    const slides = document.querySelectorAll('.slider li input');
+    slides[slideNumber].checked = true;
 }
 // Obtém o elemento da imagem e do botão
 const imagem = document.getElementById('imagem');
@@ -188,7 +188,7 @@ const imagens = ['../img/icones/favoritos.svg', '../img/icones/favoritos2.svg'];
 let indiceImagemAtual = 0;
 
 // Adicione um ouvinte de evento para o botão
-botaoTrocarImagem.addEventListener('click', function() {
+botaoTrocarImagem.addEventListener('click', function () {
     // Altera a origem da imagem para a próxima imagem no array
     indiceImagemAtual = (indiceImagemAtual + 1) % imagens.length;
     imagem.src = imagens[indiceImagemAtual];
@@ -203,16 +203,16 @@ botaoTrocarImagem.addEventListener('click', function() {
 
 
 
-    // Função para inicializar o formulário
-    function initializeForm() {
-        // Recuperar o nome armazenado no localStorage
-        var nomeArmazenado = localStorage.getItem('storedName');
+// Função para inicializar o formulário
+function initializeForm() {
+    // Recuperar o nome armazenado no localStorage
+    var nomeArmazenado = localStorage.getItem('storedName');
 
-        // Exibir o nome na tela se existir
-        if (nomeArmazenado) {
-            document.getElementById('displayNome').innerText = "Nome armazenado: " + nomeArmazenado;
-        }
+    // Exibir o nome na tela se existir
+    if (nomeArmazenado) {
+        document.getElementById('displayNome').innerText = "Nome armazenado: " + nomeArmazenado;
     }
+}
 
 // Função para validar o formulário
 function validateForm() {
@@ -256,6 +256,48 @@ function validateForm() {
     // Evitar o envio do formulário tradicional
     return false;
 }
+
+
+
+
+function validateFormu() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    var confirmPassword = document.getElementById('confirmPassword').value;
+
+    // Validar nome sem caracteres especiais
+    var nameRegex = /^[a-zA-Z ]*$/;
+    if (!nameRegex.test(name)) {
+        displayError("Nome inválido. Use apenas letras e espaços.");
+        return false;
+    }
+
+    // Validar email
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        displayError("Email inválido. Insira um email válido.");
+        return false;
+    }
+
+    // Validar senha
+    if (password.length < 6) {
+        displayError("A senha deve ter pelo menos 6 caracteres.");
+        return false;
+    }
+
+    // Confirmar senha
+    if (password !== confirmPassword) {
+        displayError("As senhas não coincidem. Por favor, revise.");
+        return false;
+    }
+
+    // Evitar o envio do formulário tradicional
+    return false;
+}
+
+
+
 
 // Função para exibir mensagens de erro
 function displayError(message) {
