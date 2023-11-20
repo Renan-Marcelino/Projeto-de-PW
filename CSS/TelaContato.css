@@ -3,8 +3,8 @@
     .fundo {
         position: absolute;
         display: flex;
-        top: 460.8px;
-        left: 255px;
+        top: 50%;
+        left: 16%;
         transform: translate(50%, -50%);
         border: 2px solid black;
         background-color: rgb(255, 255, 255);
@@ -27,7 +27,7 @@
     .img {
         position: relative;
         top: -8%;
-        right: 8%;
+        right: 68%;
         height: 300px;
         width: 300px;
     }
@@ -135,13 +135,20 @@
     /* Estilo para o alerta */
     #alerta {
         position: absolute;
-        display: flex;
+        display: none;
         background-color: rgb(0, 255, 8);
         top: 1.4%;
-        height: 4%;
+        height: 3%;
         width: 100%;
-        align-items: center;
-        font-size: 25px;
+        text-align: center;
+        font-size: 28px;
         font-weight: bolder;
+    }
+
+    .form {
+      position: relative;
+      left: 27%;
+      top: 9%;
+      font-size: 33px;
     }
 }
