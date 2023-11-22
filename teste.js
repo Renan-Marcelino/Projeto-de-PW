@@ -287,4 +287,4 @@ function initializeSecondPage() {
 // Inicializar a segunda página ao carregar
 window.onload = initializeSecondPage;
 
-document.write('<a href="' + document.referrer + '">Go Back</a>');
+document.write('<a href="' + document.referrer + '"></a>');

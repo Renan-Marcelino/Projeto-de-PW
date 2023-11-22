@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,49 +9,29 @@
     <link rel="shortcut icon" type="imagex/png" href="img/logo sem nome titulo.png">
     <title>Lar House Imobiliária</title>
 </head>
+
 <body>
-    
+
     <div class="fundo" id="fundo">
-        
+
         <img class="img" src="img/logo sem nome.png" alt="">
-        
-        <button class="fechar" onclick="fecharPopup()"><iconify-icon icon="icon-park:big-x" flip="horizontal,vertical"></iconify-icon></button>
-        
-        <!--<form action="https://api.sheetmonkey.io/form/9Xz3g5h3aQzanD5rQxhit4" method="post">
-            <span class="nome">
-                <input type="text" placeholder="nome" name="name">
-            </span>
-            
-            <span class="email2">
-                <input type="email" placeholder="Email" name="email">
-            </span>
-            
-            <span class="senha2">
-                <input type="password" placeholder="senha" name="senha">
-            </span>
-            
-            <span class="Confirmar-Senha">
-                <input type="password" placeholder="Confirmar Senha" name="confirmar senha">
-            </span>
-            
-            <button class="Cadastrar" onclick="confirmar()" onclick="fecharPopup()" type="button">Cadastrar</button>
-        </form>-->
-        
+
+        <button class="fechar" onclick="fecharPopup()"><iconify-icon icon="icon-park:big-x"
+                flip="horizontal,vertical"></iconify-icon></button>
+
         <form id="myForm" onsubmit="return validateForm() ">
-            <input type="text" id="name" name="name" class="nome" required> 
-        
+            <input type="text" id="name" name="name" class="nome" required>
+
             <input type="email" id="email" name="email" class="email2" required>
-        
+
             <input type="password" id="password" name="password" class="senha2" required>
-        
+
             <input type="password" id="confirmPassword" name="confirmPassword" class="Confirmar-Senha" required>
-        
+
             <div id="error"></div>
-        
+
             <button class="Cadastrar" type="submit">Cadastrar</button>
         </form>
-
-
 
         <div id="modalCadastro" class="modal">
             <div id="modalContentCadastro" class="modal-content">
@@ -75,4 +56,5 @@
     </div>
 </body>
 <script src="teste.js"></script>
+
 </html>

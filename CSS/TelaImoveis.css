@@ -12,7 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 59px;
+    height: 6.3vh;
 }
 
 .iconeTamanhologo {
@@ -26,12 +26,16 @@ body {
 
 .botoes {
     position: relative;
-    right: 20.5%;
+    right: 24.5%;
     display: flex;
-    height: 52%;
-    width: 10%;
-    scale: 1.2;
+    height: 50%;
+    scale: 1.1;
     justify-content: space-between;
+}
+
+.botoes select {
+    margin-right: 10px;
+    width: 28%;
 }
 
 .barraPesquisa {
@@ -39,7 +43,7 @@ body {
     margin-top: 1%;
     width: 300%;
     padding: 5%;
-    right: 340%;
+    right: 380%;
 }
 
 .iconeTamanhopesquisa {
@@ -77,7 +81,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 11.5%;
-    margin-top: 8%;
+    margin-top: 5%;
 }
 
 .gridImages img {
