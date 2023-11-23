@@ -211,11 +211,6 @@ function validateForm() {
     return false;
 }
 
-
-
-
-
-
  // Função para validar o formulário
  function validateFormu() {
     var name = document.getElementById('name').value;
@@ -249,23 +244,17 @@ function validateForm() {
         alerta.style.display = "none";
         // Permitir o envio do formulário tradicional
         document.getElementById("myForm").submit();
-    }, 3000);
+    }, 2100);
 
     // Evitar o envio do formulário tradicional imediatamente
     return false;
 }
-
 
 // Função para exibir mensagens de erro
 function displayError(message) {
     var errorDiv = document.getElementById('error');
     errorDiv.innerHTML = "<p class='error'>" + message + "</p>";
 }
-
-
-
-
-
 
 // Função para exibir mensagens de erro
 function displayError(message) {
